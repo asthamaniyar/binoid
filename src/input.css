@@ -37,19 +37,24 @@
   body {
     @apply m-0 p-0 font-body;
   }
-  h1 {
+  h1,
+  .h1 {
     @apply text-[100px] 2xs:text-[48px] md:text-[52px] lg:text-[80px] xl:text-[100px] font-heading font-normal text-black uppercase leading-[120px] 2xs:leading-[58px] lg:leading-[70px] xl:leading-[120px];
   }
-  h2 {
-    @apply text-[64px] font-heading font-normal text-black;
+  h2,
+  .h2 {
+    @apply text-[64px] 2xs:text-[48px] xl:text-[64px] font-heading font-normal text-black leading-[77px] 2xs:leading-[58px] xl:leading-[77px];
   }
-  h3 {
+  h3,
+  .h3 {
     @apply text-[48px] font-heading font-normal text-black;
   }
-  h4 {
-    @apply text-[24px] font-body font-bold text-black;
+  h4,
+  .h4 {
+    @apply text-[24px] font-body font-bold text-black leading-[29px] 2xs:leading-6 md:leading-[29px];
   }
-  h5 {
+  h5,
+  .h5 {
     @apply text-[20px] font-body font-normal;
   }
   p {
@@ -59,7 +64,16 @@
 
 @layer components {
   .custom-btn {
-    @apply rounded-[20px] uppercase text-white bg-green font-bold py-2.5 px-7 text-base font-body leading-5;
+    @apply rounded-[20px] uppercase text-white cursor-pointer transition duration-300 ease-in-out hover:text-green hover:bg-white bg-green font-bold py-2.5 px-7 text-base font-body leading-5;
+  }
+  .custom-orange-btn {
+    @apply rounded-[20px] uppercase tracking-[0.006em] text-white cursor-pointer transition duration-300 ease-in-out hover:text-orange hover:bg-white hover:border-2 hover:border-orange bg-orange font-bold py-2.5 px-7 text-base font-body leading-5;
+  }
+  .custom-dark-blue-btn {
+    @apply rounded-[20px] uppercase tracking-[0.006em] text-white cursor-pointer transition duration-300 ease-in-out hover:text-dark-blue hover:bg-white bg-dark-blue hover:border-2 hover:border-dark-blue font-bold py-2.5 px-7 text-base font-body leading-5;
+  }
+  .custom-light-blue-btn {
+    @apply rounded-[20px] uppercase tracking-[0.006em] text-white cursor-pointer transition duration-300 ease-in-out hover:text-lightblue hover:bg-white bg-lightblue hover:border-2 hover:border-lightblue font-bold py-2.5 px-7 text-base font-body leading-5;
   }
 }
 
@@ -67,14 +81,44 @@
   .container-lg {
     @apply w-full xs:px-2.5 md:px-[55px];
   }
-  .mobile-links li{
+  .container-max-1232 {
+    @apply px-[140px] 2xs:px-[30px] lg:px-26 xl:px-[140px] w-full;
+  }
+  .container-max-1312 {
+    @apply px-[100px] 2xs:px-0 lg:px-[60px] xl:px-[100px] w-full;
+  }
+  .mobile-links li {
     @apply px-8 font-bold font-body;
   }
-  .hero-section span{
+  .hero-section span {
     @apply font-bold text-black;
   }
-  .icon{
+  .icon {
     @apply flex gap-10 2xs:gap-5 xl:gap-10;
+  }
+  .next-evaluation-Socializing .feature-main {
+    @apply flex lg:flex-col gap-5 w-full;
+  }
+  .next-evaluation-Socializing .feature {
+    @apply flex 2xs:flex-col sm:flex-row gap-2.5 lg:items-center 2xs:w-[50%] lg:w-auto;
+  }
+  .next-evaluation-Socializing .feature .green-tick {
+    @apply rounded-full border-2 border-green w-fit h-fit p-[13px];
+  }
+  .next-evaluation-Socializing .feature p {
+    @apply font-bold sm:self-center;
+  }
+  .swiper-navigation-icon {
+    @apply w-5! h-5!;
+  }
+  .swiper-button-prev svg{
+    @apply font-bold!;
+  }
+  .swiper-scrollbar-drag {
+    @apply bg-green! h-2.5!;
+  }
+  .swiper-scrollbar {
+    @apply h-2.5!;
   }
 }
 
@@ -92,14 +136,14 @@
 
 .fixed-header {
   position: fixed;
-  top: 38px;
+  top: 46px;
   left: 0;
   width: 100%;
   z-index: 999;
   background-color: #ffffff;
   box-shadow: 0px 4px 20px 0px #00000033;
   animation: stickySlideDown 1s ease-in-out;
-  padding-block: 12px;
+  padding-block: 20px;
 }
 .fixed-announcement-bar {
   position: fixed;
@@ -110,9 +154,35 @@
   background-color: black;
   color: white;
   animation: stickySlideDown 1s ease-in-out;
-  padding-block: 10px;
+  padding-block: 14px;
 }
 
-.scrolled svg path{
-  fill: black;
+.scrolled path {
+  fill: black !important;
+}
+.scrolled svg {
+  fill: black !important;
+}
+
+.dark-blue-gradiant {
+  background: linear-gradient(0deg, #006cb5, #006cb5),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+}
+.orange-gradiant {
+  background: linear-gradient(0deg, #f26422, #f26422),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+}
+.lightblue-gradiant {
+  background: linear-gradient(0deg, #01bcf1, #01bcf1),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
