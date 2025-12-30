@@ -267,6 +267,9 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+  .h-auto {
+    height: auto;
+  }
   .h-fit {
     height: fit-content;
   }
@@ -287,9 +290,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .w-screen {
-    width: 100vw;
   }
   .max-w-\[960px\] {
     max-width: 960px;
@@ -458,9 +458,6 @@
   .pr-2\.5 {
     padding-right: calc(var(--spacing) * 2.5);
   }
-  .pr-\[100px\] {
-    padding-right: 100px;
-  }
   .pr-\[140px\] {
     padding-right: 140px;
   }
@@ -489,6 +486,10 @@
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
+  }
+  .leading-\[29px\] {
+    --tw-leading: 29px;
+    line-height: 29px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -769,6 +770,11 @@
       width: 17.74px;
     }
   }
+  .\32 xs\:w-\[135px\] {
+    @media (width >= 320px) {
+      width: 135px;
+    }
+  }
   .\32 xs\:w-\[170px\] {
     @media (width >= 320px) {
       width: 170px;
@@ -932,6 +938,11 @@
   .\32 xs\:pb-20 {
     @media (width >= 320px) {
       padding-bottom: calc(var(--spacing) * 20);
+    }
+  }
+  .\32 xs\:pl-\[30px\] {
+    @media (width >= 320px) {
+      padding-left: 30px;
     }
   }
   .\32 xs\:text-center {
@@ -1109,6 +1120,11 @@
       width: 41.50%;
     }
   }
+  .lg\:w-\[45\.82\%\] {
+    @media (width >= 64rem) {
+      width: 45.82%;
+    }
+  }
   .lg\:w-\[54\.18\%\] {
     @media (width >= 64rem) {
       width: 54.18%;
@@ -1117,6 +1133,11 @@
   .lg\:w-\[54\.45\%\] {
     @media (width >= 64rem) {
       width: 54.45%;
+    }
+  }
+  .lg\:w-\[187px\] {
+    @media (width >= 64rem) {
+      width: 187px;
     }
   }
   .lg\:w-auto {
@@ -1324,11 +1345,6 @@
   .xl\:pt-\[143px\] {
     @media (width >= 80rem) {
       padding-top: 143px;
-    }
-  }
-  .xl\:pr-\[100px\] {
-    @media (width >= 80rem) {
-      padding-right: 100px;
     }
   }
   .xl\:pr-\[140px\] {
@@ -1965,7 +1981,13 @@
     &::before {
       content: var(--tw-content);
       @media (width >= 80rem) {
-        background-size: auto;
+        height: 476px;
+      }
+    }
+    &::before {
+      content: var(--tw-content);
+      @media (width >= 96rem) {
+        height: auto;
       }
     }
   }
@@ -1981,6 +2003,14 @@
     }
     &::before {
       content: var(--tw-content);
+      right: calc(var(--spacing) * 0);
+    }
+    &::before {
+      content: var(--tw-content);
+      left: 78px;
+    }
+    &::before {
+      content: var(--tw-content);
       z-index: 10;
     }
     &::before {
@@ -1989,23 +2019,15 @@
     }
     &::before {
       content: var(--tw-content);
+      background-size: contain;
+    }
+    &::before {
+      content: var(--tw-content);
       background-repeat: no-repeat;
     }
     &::before {
       --tw-content: '';
       content: var(--tw-content);
-    }
-    &::before {
-      content: var(--tw-content);
-      @media (width >= 320px) {
-        background-size: contain;
-      }
-    }
-    &::before {
-      content: var(--tw-content);
-      @media (width >= 80rem) {
-        background-size: auto;
-      }
     }
   }
 }
@@ -2047,20 +2069,20 @@
 .scrolled svg {
   fill: black !important;
 }
-.dark-blue-gradiant {
-  background-image: linear-gradient(0deg, #006cb5, #006cb5), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-}
-.orange-gradiant {
-  background-image: linear-gradient(0deg, #f26422, #f26422), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-}
-.lightblue-gradiant {
-  background-image: linear-gradient(0deg, #01bcf1, #01bcf1), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-}
 .swiper-slide {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.dark-blue-gradient {
+  background-image: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100% ), linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(0deg, #006cb5, #006cb5);
+}
+.orange-gradiant {
+  background-image: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100% ), linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(0deg, #f26422, #f26422);
+}
+.lightblue-gradiant {
+  background-image: linear-gradient( 180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100% ), linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(0deg, #01bcf1, #01bcf1);
 }
 @property --tw-translate-x {
   syntax: "*";

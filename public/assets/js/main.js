@@ -103,11 +103,11 @@ document.addEventListener("DOMContentLoaded", () => {
 var swiper = new Swiper(".choose-you-sip", {
   slidesPerView: 1,
   spaceBetween: 30,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  //   pauseOnMouseEnter: true,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1.4,
