@@ -73,7 +73,7 @@ window.addEventListener("scroll", () => {
   const paths = closeIcon.querySelectorAll("path");
   let targetTop = "";
   if (isLargeScreen) {
-    targetTop = isScrolled ? "137px" : "122px";
+    targetTop = isScrolled ? "137px" : "143px";
   } else {
     targetTop = isScrolled ? "115px" : "117px";
   }
