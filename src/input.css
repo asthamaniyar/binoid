@@ -71,13 +71,13 @@
     @apply rounded-[20px] uppercase text-white cursor-pointer transition duration-300 ease-in-out hover:text-white hover:bg-[#14532d] bg-green font-bold py-2.5 px-7 text-base font-body leading-5;
   }
   .custom-orange-btn {
-    @apply rounded-[20px] uppercase tracking-[0.006em] text-white cursor-pointer transition duration-300 ease-in-out hover:text-orange hover:bg-white hover:border-2 hover:border-orange bg-orange font-bold py-2.5 px-7 text-base font-body leading-5;
+    @apply rounded-[20px] uppercase tracking-[0.006em] border-2 border-orange text-white cursor-pointer transition duration-300 ease-in-out hover:text-orange hover:bg-white hover:border-2 hover:border-orange bg-orange font-bold py-2.5 px-7 text-base font-body leading-5;
   }
   .custom-dark-blue-btn {
-    @apply rounded-[20px] uppercase tracking-[0.006em] text-white cursor-pointer transition duration-300 ease-in-out hover:text-dark-blue hover:bg-white bg-dark-blue hover:border-2 hover:border-dark-blue font-bold py-2.5 px-7 text-base font-body leading-5;
+    @apply rounded-[20px] uppercase tracking-[0.006em] border-2 border-dark-blue text-white cursor-pointer transition duration-300 ease-in-out hover:text-dark-blue hover:bg-white bg-dark-blue hover:border-2 hover:border-dark-blue font-bold py-2.5 px-7 text-base font-body leading-5;
   }
   .custom-light-blue-btn {
-    @apply rounded-[20px] uppercase tracking-[0.006em] text-white cursor-pointer transition duration-300 ease-in-out hover:text-lightblue hover:bg-white bg-lightblue hover:border-2 hover:border-lightblue font-bold py-2.5 px-7 text-base font-body leading-5;
+    @apply rounded-[20px] uppercase tracking-[0.006em] border-2 border-lightblue text-white cursor-pointer transition duration-300 ease-in-out hover:text-lightblue hover:bg-white bg-lightblue hover:border-2 hover:border-lightblue font-bold py-2.5 px-7 text-base font-body leading-5;
   }
   .custom-white-btn {
     @apply rounded-[20px] uppercase tracking-[0.006em] text-green cursor-pointer transition duration-300 ease-in-out hover:text-white hover:bg-green bg-white font-bold py-2.5 px-7 text-base font-body leading-5;

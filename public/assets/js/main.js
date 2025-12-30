@@ -103,28 +103,28 @@ document.addEventListener("DOMContentLoaded", () => {
 var swiper = new Swiper(".choose-you-sip", {
   slidesPerView: 1,
   spaceBetween: 30,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  //   pauseOnMouseEnter: true,
+  // },
   breakpoints: {
     320: {
       slidesPerView: 1.4,
-      spaceBetween: 28,
+      spaceBetween: 33,
       initialSlide: 0,
       centeredSlides: true,
       loop: false,
     },
     640: {
       slidesPerView: 2,
-      spaceBetween: 28,
+      spaceBetween: 33,
       centeredSlides: true,
       loop: false,
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 28,
+      spaceBetween: 33,
       centeredSlides: false,
     },
     1280: {
