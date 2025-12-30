@@ -168,6 +168,8 @@ var swiper = new Swiper(".all-flavor-swiper", {
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
+    draggable: true,
+    mousewheel: true,
   },
   breakpoints: {
     320: {
@@ -181,7 +183,7 @@ var swiper = new Swiper(".all-flavor-swiper", {
       centeredSlides: false,
     },
     1280: {
-      slidesPerView: 3.5,
+      slidesPerView: 2.5,
       spaceBetween: 20,
       centeredSlides: false,
     },

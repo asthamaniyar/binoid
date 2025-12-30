@@ -145,11 +145,26 @@
   .testomonial .testnomial-contant-main {
     @apply lg:px-7 lg:py-[47px] 2xs:px-[30px];
   }
-  .choose-your-sip .absolute-card{
+  .choose-your-sip .absolute-card {
     @apply after:absolute after:w-full after:h-full after:inset-0 after:z-50;
   }
-  .select-contant{
-    @apply flex cursor-pointer items-center justify-between rounded-[20px] border-2 border-green bg-white px-7 py-2.5;
+  .select-contant {
+    @apply flex cursor-pointer items-center justify-between rounded-[20px] border-2 border-green bg-white px-7 py-2;
+  }
+  .orange-overlay-before {
+    @apply relative before:content-[''] before:absolute before:inset-0 before:bg-[url('./assets/Image/orange-bg.png')] 
+           before:bg-no-repeat before:z-10 
+           before:top-0 
+           before:-left-[97.88px]
+           before:2xs:bg-contain 
+           before:xl:bg-auto;
+  }
+  .blue-overlay-before {
+    @apply relative before:content-[''] before:absolute before:inset-0 before:bg-[url('./assets/Image/bg-blue.png')]
+            before:2xs:bg-contain
+            before:xl:bg-auto
+            before:bg-no-repeat
+            before:z-10;
   }
 }
 
