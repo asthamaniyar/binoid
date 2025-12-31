@@ -26,6 +26,7 @@
     --color-lightblue: #01bcf1;
     --color-orange: #f26422;
     --color-dark-blue: #006cb5;
+    --color-yellow: #fff001;
     --color-yello2: #f4ec0a;
     --font-body: "Montserrat", sans-serif;
     --font-heading: "Bebas Neue", sans-serif;
@@ -635,6 +636,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-white);
+      }
+    }
+  }
+  .hover\:text-yellow {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-yellow);
       }
     }
   }
